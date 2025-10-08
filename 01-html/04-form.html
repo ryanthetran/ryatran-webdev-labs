@@ -8,13 +8,26 @@
   </head>
   <body>
     <main>
-      <h1>Ryan's Form</h1>
-      <p>
-        Hey there! Ryan Tran here with one last notebook entry! Check out my
-        form!
-      </p>
       <form action="/submit">
         <!-- Add your code here -->
+        <h1>Ryan's Form</h1>
+        <p>
+          Hey there! Ryan Tran here with one last notebook entry! Check out my
+          form!
+        </p>
+        <!-- Section 1: Name + Date-->
+        <div>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="fullname" />
+        </div>
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="useremail" />
+        </div>
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="currentdate" />
+        </div>
       </form>
     </main>
   </body>
