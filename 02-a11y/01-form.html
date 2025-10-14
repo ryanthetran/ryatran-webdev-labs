@@ -18,17 +18,37 @@
           placeholder="Full Name Here"
         />
       </div>
-      <label>
-        Email
-        <input type="text" />
-      </label>
-      <br /><br />
-      <span>Favorite Character</span>
-      <div><input type="radio" id="spongebob" />Spongebob</div>
-      <div><input type="radio" id="patrick" />Patrick</div>
-      <div><input type="radio" id="sandy" />Sandy</div>
-      <br />
-      <button>Submit</button>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="useremail"
+          placeholder="Full Name Here"
+        />
+      </div>
+      <fieldset>
+        <legend>Favorite Character?</legend>
+        <input
+          type="radio"
+          id="spongebob"
+          name="favoritecharacter"
+          value="spongebob"
+        />
+        <label for="question1work">Spongebob</label>
+        <input
+          type="radio"
+          id="patrick"
+          name="favoritecharacter"
+          value="patrick"
+        />
+        <label for="question1work">Patrick</label>
+        <input type="radio" id="sandy" name="favoritecharacter" value="sandy" />
+        <label for="question1work">Sandy</label>
+      </fieldset>
+      <div>
+        <input type="submit" value="Submit!" />
+      </div>
     </form>
   </body>
 </html>
