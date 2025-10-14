@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>01 - Form</h1>
-    <form action="/submit">
+    <form method="post" action="/submit">
       <div>
         <label for="name">Name</label>
         <input
@@ -27,6 +27,7 @@
           placeholder="Full Name Here"
         />
       </div>
+      <br />
       <fieldset>
         <legend>Favorite Character?</legend>
         <input
@@ -35,17 +36,18 @@
           name="favoritecharacter"
           value="spongebob"
         />
-        <label for="question1work">Spongebob</label>
+        <label for="spongebob">Spongebob</label>
         <input
           type="radio"
           id="patrick"
           name="favoritecharacter"
           value="patrick"
         />
-        <label for="question1work">Patrick</label>
+        <label for="patrick">Patrick</label>
         <input type="radio" id="sandy" name="favoritecharacter" value="sandy" />
-        <label for="question1work">Sandy</label>
+        <label for="sandy">Sandy</label>
       </fieldset>
+      <br />
       <div>
         <input type="submit" value="Submit!" />
       </div>
