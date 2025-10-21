@@ -12,7 +12,7 @@
 
 li[class="dog"],
 li[class="hedgehog"] {
-  color: var(--magenta);
+  color: var(--darkmagenta);
 }
 
 li[id="cat"] {
@@ -35,7 +35,7 @@ ol > .first {
 }
 
 .first ~ li {
-  color: var(--magenta);
+  color: var(--darkmagenta);
 }
 
 .second + li {
