@@ -1,25 +1,32 @@
 /* Specificity Exercise */
+/* X - Y - Z */
 
 nav .list-item > a {
   color: var(--purple);
 }
+/* Answer 1.) 0 - 1 - 2 */
 
 #main::first-letter {
   color: var(--purple);
 }
+/* Answer 2.) 1 - 0 - 1 */
 
 input[type] {
   color: var(--purple);
 }
+/* Answer 3.) 0 - 1 - 1 */
 
 section .main::first-line {
   color: var(--purple);
 }
+/* Answer 4.) 0 - 1 - 2 */
 
-nav ul.menu li#first a:not([class='visited']) {
+nav ul.menu li#first a:not([class="visited"]) {
   color: var(--purple);
 }
+/* Answer 5.) 1 - 2 - 4 */
 
 div ol li ul li ol li ul li a {
   color: var(--purple);
 }
+/* Answer 6.) 0 - 0 - 10 */
