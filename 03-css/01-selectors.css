@@ -10,7 +10,8 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class="dog"] {
+li[class="dog"],
+li[class="hedgehog"] {
   color: var(--magenta);
 }
 
@@ -22,14 +23,7 @@ li[class="parrot"] {
   color: var(--green);
 }
 
-li[class="donkey"] {
-  color: var(--royalblue);
-}
-
-li[class="hedgehog"] {
-  color: var(--magenta);
-}
-
+li[class="donkey"],
 li[class*="cat dog"] {
   color: var(--royalblue);
 }
