@@ -30,6 +30,18 @@ li[class*="cat dog"] {
 
 /* Use descendant, child, and sibling selectors for the second part */
 
-section li {
+ol > .first {
+  color: var(--green);
+}
+
+.first ~ li {
+  color: var(--magenta);
+}
+
+.second + li {
+  color: var(--royalblue);
+}
+
+.list-cleaning li {
   color: var(--green);
 }
