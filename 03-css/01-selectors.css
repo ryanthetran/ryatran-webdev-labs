@@ -10,8 +10,7 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class="dog"],
-li[class="hedgehog"] {
+li[class$="g"] {
   color: var(--darkmagenta);
 }
 
@@ -19,7 +18,7 @@ li[id="cat"] {
   color: var(--teal);
 }
 
-li[class="parrot"] {
+li[class^="pa"] {
   color: var(--green);
 }
 
@@ -30,7 +29,7 @@ li[class*="cat dog"] {
 
 /* Use descendant, child, and sibling selectors for the second part */
 
-ol > .first {
+section li {
   color: var(--green);
 }
 
@@ -40,8 +39,4 @@ ol > .first {
 
 .second + li {
   color: var(--royalblue);
-}
-
-.list-cleaning li {
-  color: var(--green);
 }
