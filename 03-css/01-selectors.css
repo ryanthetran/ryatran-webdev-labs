@@ -10,8 +10,28 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
-li[class] {
-  color: var(--red);
+li[class="dog"] {
+  color: var(--magenta);
+}
+
+li[id="cat"] {
+  color: var(--teal);
+}
+
+li[class="parrot"] {
+  color: var(--green);
+}
+
+li[class="donkey"] {
+  color: var(--royalblue);
+}
+
+li[class="hedgehog"] {
+  color: var(--magenta);
+}
+
+li[class*="cat dog"] {
+  color: var(--royalblue);
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
