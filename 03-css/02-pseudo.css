@@ -2,3 +2,11 @@
   width: 600px;
   margin: 40px auto;
 }
+
+.container p::first-letter {
+  font-size: 3em;
+}
+
+.container p:hover {
+  background-color: lightskyblue;
+}
