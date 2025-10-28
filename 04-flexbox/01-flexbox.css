@@ -33,6 +33,26 @@
 }
 
 /* Flex Container 5 */
+.flex-container-5 {
+  align-items: center;
+}
+
+.flex-container-5 .item1,
+.flex-container-5 .item3,
+.flex-container-5 .item6 {
+  height: 300px;
+}
+
+.flex-container-5 .item2,
+.flex-container-5 .item8 {
+  height: 400px;
+}
+
+.flex-container-5 .item4,
+.flex-container-5 .item5,
+.flex-container-5 .item7 {
+  height: 200px;
+}
 
 /* Flex Container 6 */
 
