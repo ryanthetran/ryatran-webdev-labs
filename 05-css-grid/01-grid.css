@@ -19,6 +19,15 @@
 /* use height: 400px; on the container */
 
 /* Grid Container 3 */
+.grid-container-3 {
+  height: 400px;
+  grid-template-columns: 10% 45% 45%;
+  grid-template-rows: 1fr 2fr 2fr;
+}
+
+.grid-container-3 .item8 {
+  grid-column: span 2;
+}
 
 /* use height: 400px; on the container */
 
