@@ -19,8 +19,18 @@
 
 /* Flex Container 3 */
 /* use height: 400px; on the container */
+.flex-container-3 {
+  height: 400px;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
 
 /* Flex Container 4 */
+.flex-container-4 {
+  flex-flow: row wrap-reverse;
+  justify-content: space-around;
+}
 
 /* Flex Container 5 */
 
