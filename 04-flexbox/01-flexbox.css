@@ -55,6 +55,11 @@
 }
 
 /* Flex Container 6 */
+.flex-container-6 {
+  height: 300px;
+  flex-flow: column wrap;
+  align-content: space-between;
+}
 
 .flex-container-6 .flex-item {
   width: 400px;
