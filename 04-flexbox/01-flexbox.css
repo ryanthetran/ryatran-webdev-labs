@@ -12,6 +12,10 @@
 }
 
 /* Flex Container 2 */
+.flex-container-2 {
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
 
 /* Flex Container 3 */
 /* use height: 400px; on the container */
