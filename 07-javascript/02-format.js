@@ -4,6 +4,22 @@ const formatItems = (input) => {
   // for reference, see the MDN Number page:
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 
+  // get input array length
+  input_length = input.length;
+
+  // setup new string
+  string = "";
+
+  //for every item (except for last, add to the new string w/ a comma)
+  for (let i = 0; i < input_length - 1; ++i) {
+    string = string.concat(Number.parseFloat(input[i]).toFixed(3) + ", ");
+  }
+
+  // for the last item, do not add a comma
+  string = string.concat(Number.parseFloat(input[input_length - 1]).toFixed(3));
+
+  input = string;
+
   return input;
 };
 
