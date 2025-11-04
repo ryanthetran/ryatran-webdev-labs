@@ -4,12 +4,20 @@ const replaceItems = (input) => {
   // for reference, see the MDN "Regular Expressions" entry:
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
+  // replace gold with SHINY
+  const goldRegex = /\bgold\b/gi;
+  input = input.replace(goldRegex, "SHINY");
+
+  // replace wander with roam
+  const wanderRegex = /\bwander\b/gi;
+  input = input.replace(wanderRegex, "roam");
+
   return input;
 };
 
-console.log(replaceItems('All that is gold does not glitter'));
+console.log(replaceItems("All that is gold does not glitter"));
 // expected: 'All that is SHINY does not glitter'
-console.log(replaceItems('Wisdom is better than silver or GOLD.'));
+console.log(replaceItems("Wisdom is better than silver or GOLD."));
 // expected: 'Wisdom is better than silver or SHINY.'
-console.log(replaceItems('Not all those who Wander are lost'));
+console.log(replaceItems("Not all those who Wander are lost"));
 // expected: 'Not all those who roam are lost'
