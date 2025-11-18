@@ -34,9 +34,8 @@ const filterFamily = (characters, house) => {
   const filteredFamily = characters.filter(
     (character) => character.house === house
   );
-  const filteredFamilyNames = filteredFamily.map((character) => character.name);
 
-  return filteredFamilyNames;
+  return filteredFamily;
 };
 
 const reduceHouses = (characters) => {
