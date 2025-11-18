@@ -40,8 +40,12 @@ const filterFamily = (characters, house) => {
 
 const reduceHouses = (characters) => {
   // Return an object with the number of characters from each house
+  const houses = characters.reduce((acc, curr) => {
+    acc.hasOwnProperty(curr.house) ? acc[curr.house]++ : (acc[curr.house] = 1);
+    return acc;
+  }, {});
 
-  return characters;
+  return houses;
 };
 
 console.log(mapNameFamily(characters));
